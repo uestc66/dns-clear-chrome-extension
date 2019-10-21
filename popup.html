@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>clear-dns</title>
+    <style>
+      header {
+        font-weight: bold;
+        font-size: 16px;
+        color: red;
+      }
+      body {
+        width: 180px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn {
+        display: inline-block;
+        font-weight: 400;
+        white-space: nowrap;
+        text-align: center;
+        background-image: none;
+        border: 1px solid transparent;
+        height: 32px;
+        padding: 0 15px;
+        font-size: 14px;
+        border-radius: 4px;
+      }
+      .btn-danger {
+        color: #fff;
+        background-color: #ff4d4f;
+        border-color: #ff4d4f;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+        -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+      }
+
+      #clear-btn {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>🚀CHROME DNS🚀</header>
+    <form name="clear-form">
+      benchmarking:
+      <input type="checkBox" id="clear-checkbox" />
+    </form>
+    <button class="btn btn-danger" id="clear-btn">
+      <span>Clear</span>
+    </button>
+
+    <script src="./popup.js"></script>
+  </body>
+</html>
